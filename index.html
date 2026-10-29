@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rana Shayan Amir &mdash; Portfolio</title>
+    <meta name="description" content="Personal portfolio of Rana Shayan Amir, a student at New College of Florida interested in software development, AI, and technology." />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-inner">
+        <a class="nav-brand" href="#">Rana Shayan</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" type="button">Dark mode</button>
+      </div>
+    </nav>
+
+    <header>
+      <div class="hero">
+        <div class="hero-text">
+          <span class="hero-badge">New College of Florida</span>
+          <h1>Rana Shayan Amir</h1>
+          <p class="hero-description">
+            I build things for the web and mobile, dig into how AI actually works, and lose at chess more than I'd like to admit.
+          </p>
+          <a class="btn" href="#contact">Say hi</a>
+        </div>
+        <img src="img/avatar.svg" alt="Illustrated avatar" class="hero-avatar" />
+      </div>
+    </header>
+
+
+    <main>
+      <section id="about">
+        <p class="section-label">About</p>
+        <h2>Who I am</h2>
+        <p>
+          I'm at New College of Florida studying computer science and data science. Most of my time outside class goes into building things &mdash; web apps, mobile apps, whatever idea I'm stuck on that week. I also read a lot about how AI models actually work, not just what they can do. And yes, I play chess.
+        </p>
+        <ul class="interest-list">
+          <li>Web apps</li>
+          <li>Mobile development</li>
+          <li>AI and how it actually works</li>
+          <li>Chess</li>
+        </ul>
+      </section>
+
+      <section id="technologies">
+        <p class="section-label">Technologies</p>
+        <h2>Things I work with</h2>
+        <p class="section-intro">Stuff I use or have been picking up. Search or filter by category.</p>
+
+        <div class="filter-bar">
+          <input type="search" id="tech-search" placeholder="Search technologies&hellip;" aria-label="Search technologies" />
+          <div class="category-buttons" role="group" aria-label="Filter by category">
+            <button type="button" class="filter-btn active" data-category="all">All</button>
+            <button type="button" class="filter-btn" data-category="frontend">Frontend</button>
+            <button type="button" class="filter-btn" data-category="backend">Backend</button>
+            <button type="button" class="filter-btn" data-category="language">Language</button>
+            <button type="button" class="filter-btn" data-category="mobile">Mobile</button>
+          </div>
+        </div>
+
+        <p id="tech-count" class="result-count" aria-live="polite"></p>
+        <ul id="tech-list" class="tech-cards"></ul>
+      </section>
+
+      <section id="contact">
+        <p class="section-label">Contact</p>
+        <h2>Get in touch</h2>
+        <p class="section-intro">
+          Drop me a message below, or just email me directly at <a href="mailto:sshayan.aamir@gmail.com">sshayan.aamir@gmail.com</a>.
+        </p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+            <p class="error-msg" id="name-error" role="alert"></p>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" />
+            <p class="error-msg" id="email-error" role="alert"></p>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?"></textarea>
+            <p class="error-msg" id="message-error" role="alert"></p>
+          </div>
+          <button type="submit" class="btn">Send it</button>
+        </form>
+
+        <div id="form-success" class="success-box" hidden>
+          <h3>Got it</h3>
+          <p id="success-summary"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Rana Shayan Amir</p>
+      <div class="footer-links">
+        <a href="https://github.com/shayan-amir" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="mailto:sshayan.aamir@gmail.com">Email</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
