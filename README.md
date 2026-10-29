@@ -4,7 +4,7 @@ Live site: https://shayan-amir.github.io/portfolio/
 
 A personal portfolio for Rana Shayan Amir, a student at New College of Florida studying computer science and data science. Built with HTML, CSS, and vanilla JavaScript.
 
-## Technologies used
+## What I used
 
 - HTML5
 - CSS3 (custom properties, Flexbox, Grid, dark mode)
